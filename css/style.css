@@ -1,0 +1,55 @@
+/*
+    1-Cammon Styles
+    2-General Styles
+    3-Section
+        3.0 Header Section
+        3.1 Home Section
+        3.2 About Section
+        3.3 Portfolio Section
+        3.4 Service Section
+        3.5 Prices Section
+        3.6 Team Section
+        3.7 Blog Section
+        3.8 Contact Section
+        3.9 Footer Section
+
+*/
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+body{
+    font-family: 'Varela Round', sans-serif;   
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* 3.0 Header Section */
+
+
+/*Home Section*/
+
+
+
+/*About Section*/
+/*Portfolio Section*/
+/*Service Section*/
+/*Price Section*/
+/*Team Section*/
+/*Blog Section*/
+/*Contact Section*/
