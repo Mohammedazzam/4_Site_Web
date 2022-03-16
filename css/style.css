@@ -1,7 +1,7 @@
 /*
-    1-Cammon Styles
+    1-Common Styles
     2-General Styles
-    3-Section
+    3-Section Style
         3.0 Header Section
         3.1 Home Section
         3.2 About Section
@@ -15,36 +15,60 @@
 
 */
 
-
-
-
+/*2- General css Style */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
 
-body{
-    font-family: 'Varela Round', sans-serif;   
+body {
+  font-family: "Varela Round", sans-serif;
 }
 
 .clear {
-    clear: both;
+  clear: both;
 }
 
+/* 3-Section Style */
+/* 3.0 Start Header Section */
 
-/* 3.0 Header Section */
+.header {
+  background-color: gray;
+}
 
+.header-content {
+  overflow: hidden;
+}
 
-/*Home Section*/
+.header .logo {
+  width: 40%;
+  float: left;
+}
 
+.header .nav {
+  width: 60%;
+  float: left;
+  list-style: none;
+}
 
+.header .nav li {
+  display: inline-block;
+}
+
+.header .nav li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 30px 15px;
+}
+/* 3.0 End Header Section */
 
 /*About Section*/
 /*Portfolio Section*/
