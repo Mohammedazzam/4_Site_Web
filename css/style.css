@@ -38,6 +38,31 @@
   opacity: 0.8;
 }
 
+.ltr-effect {
+  position: relative;
+}
+
+.ltr-effect::after{
+  position: absolute;
+  content: "";
+  width: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #333;
+  z-index: -1;
+  transition: width 0.5s;
+  -webkit-transition: width 0.5s;
+  -moz-transition: width 0.5s;
+  -ms-transition: width 0.5s;
+  -o-transition: width 0.5s;
+}
+
+.ltr-effect:hover::after{
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -72,6 +97,29 @@ a {
 
 button {
   font-family: inherit;
+}
+
+.pd-y {
+  padding: 120px 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-header .section-title {
+  font-size: 35px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.section-header .line {
+  display: block;
+  height: 5px;
+  width: 60px;
+  margin: 0 auto 70px auto;
+  background-color: #6195ff;
 }
 /* 3-Section Style */
 /* 3.0 Start Header Section */
@@ -113,28 +161,27 @@ button {
   display: block;
   font-size: 15px;
   padding: 30px 15px;
-
 }
 
-.header .nav > li > a.active::after, 
-.header .nav > li > a::after{
+.header .nav > li > a.active::after,
+.header .nav > li > a::after {
   content: "";
   display: block;
   height: 3px;
   margin-top: 2px;
   background-color: #6195ff;
-  transition: width 0.5s ;
+  transition: width 0.5s;
   -webkit-transition: width 0.5s;
   -moz-transition: width 0.5s;
   -ms-transition: width 0.5s;
   -o-transition: width 0.5s;
 }
 
-.header .nav > li > a.active::after{
+.header .nav > li > a.active::after {
   width: 100%;
 }
 
-.dropdown{
+.dropdown {
   position: relative;
 }
 
@@ -160,16 +207,16 @@ button {
   padding: 10px;
 }
 
-.dropdown:hover .dropdown-menu{
+.dropdown:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
 }
 
-.header .nav > li > a::after{
+.header .nav > li > a::after {
   width: 0;
 }
 
-.header .nav > li > a:hover:after{
+.header .nav > li > a:hover:after {
   width: 100%;
 }
 
@@ -230,7 +277,61 @@ button {
 }
 /* 3.1 End Home Section */
 
-/*About Section*/
+/*Start About Section*/
+.about {}
+
+.about-content {
+  overflow: hidden;
+}
+
+.about-item {
+  width: 30%;
+  float: left;
+  text-align: center;
+  border: 1px solid #e8e8e8;
+  padding: 50px 20px;
+}
+
+.about-item:hover .about-item-title {
+  color: #fff;
+}
+
+.about-item.mg {
+  margin: 0 5%;
+}
+
+.about-item .icon {
+  color: #6195ff;
+  margin-bottom: 10px;
+}
+
+.about-item-title {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  transition: color .5s;
+  -webkit-transition: color .5s;
+  -moz-transition: color .5s;
+  -ms-transition: color .5s;
+  -o-transition: color .5s;
+}
+
+.about-item-desc {
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #999;
+}
+
+.about-item-link {
+  color: #6195ff;
+  text-transform: capitalize;
+}
+/*End About Section*/
+
+
+
+
+
+
 /*Portfolio Section*/
 /*Service Section*/
 /*Price Section*/
