@@ -451,9 +451,58 @@ button {
   width: 100%;
 }
 
+
 /* End Portfolio Section */
 
-/*Service Section*/
+
+/* Start offer Section */
+
+.offer-content{
+  overflow: hidden;
+}
+
+.offer-item{
+  position: relative;
+  width: 30%;
+  float: left;
+  margin-bottom: 20px;
+  border: 1px solid #8a8a8a;
+  padding: 30px 15px 30px 70px;
+}
+
+.offer-item.mg{
+  margin: 0 5%;
+}
+
+.offer-item .icon {
+  position: absolute;
+  left: 15px;
+  top: 30px;
+  color: #6195ff;
+}
+
+.offer-item-title {
+  text-transform: capitalize;
+  margin-bottom:15px;
+  transition: color .5s;
+  -webkit-transition: color .5s;
+  -moz-transition: color .5s;
+  -ms-transition: color .5s;
+  -o-transition: color .5s;
+}
+
+.offer-item-desc {
+  text-transform: capitalize;
+  margin-bottom:15px;
+  line-height: 1.6;
+  color: #999;
+}
+
+.offer-item:hover .offer-item-title {
+  color: #fff;
+}
+/* End offer Section */
+
 /*Price Section*/
 /*Team Section*/
 /*Blog Section*/
