@@ -38,20 +38,25 @@
   opacity: 0.8;
 }
 
-.ltr-effect {
+.ltr-effect,
+.tp-effect {
   position: relative;
 }
 
-.ltr-effect::after {
+.ltr-effect::after,
+.tp-effect::after {
   position: absolute;
   content: "";
-  width: 0;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background: #333;
   z-index: -1;
+}
+
+.ltr-effect::after {
+  width: 0;
   transition: width 0.5s;
   -webkit-transition: width 0.5s;
   -moz-transition: width 0.5s;
@@ -59,8 +64,20 @@
   -o-transition: width 0.5s;
 }
 
+.tp-effect::after {
+  height: 0;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  -o-transition: height 0.5s;
+}
+
 .ltr-effect:hover::after {
   width: 100%;
+}
+
+.tp-effect:hover::after {
+  height: 100%;
 }
 
 * {
@@ -451,17 +468,15 @@ button {
   width: 100%;
 }
 
-
 /* End Portfolio Section */
-
 
 /* Start offer Section */
 
-.offer-content{
+.offer-content {
   overflow: hidden;
 }
 
-.offer-item{
+.offer-item {
   position: relative;
   width: 30%;
   float: left;
@@ -470,7 +485,7 @@ button {
   padding: 30px 15px 30px 70px;
 }
 
-.offer-item.mg{
+.offer-item.mg {
   margin: 0 5%;
 }
 
@@ -483,17 +498,17 @@ button {
 
 .offer-item-title {
   text-transform: capitalize;
-  margin-bottom:15px;
-  transition: color .5s;
-  -webkit-transition: color .5s;
-  -moz-transition: color .5s;
-  -ms-transition: color .5s;
-  -o-transition: color .5s;
+  margin-bottom: 15px;
+  transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
 }
 
 .offer-item-desc {
   text-transform: capitalize;
-  margin-bottom:15px;
+  margin-bottom: 15px;
   line-height: 1.6;
   color: #999;
 }
@@ -502,7 +517,6 @@ button {
   color: #fff;
 }
 /* End offer Section */
-
 
 /* Start Service Section */
 
@@ -553,7 +567,7 @@ button {
   -o-border-radius: 50%;
 }
 
-.service-item-img img{
+.service-item-img img {
   width: 100%;
 }
 .service-bollets {
@@ -574,7 +588,7 @@ button {
   -o-border-radius: 50%;
 }
 
-.service-bollets li.active{
+.service-bollets li.active {
   background-color: #6195ff;
 }
 
@@ -618,10 +632,98 @@ button {
 .number-item-text {
   color: #fff;
 }
+
 /* End Number Section */
 
+/*Start Price Section*/
 
-/*Price Section*/
+.pricing {
+}
+
+.pricing-plans {
+  overflow: hidden;
+}
+
+.pricing-item {
+  width: 30%;
+  float: left;
+  padding: 40px 15px;
+  border: 1px solid #e8e8e8;
+  text-align: center;
+}
+
+.pricing-item.mg {
+  margin: 0 5%;
+}
+
+.pricing-item-text {
+  text-transform: uppercase;
+  font-size: 17px;
+  color: #999;
+  transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+}
+
+.pricing-item-permonth {
+  width: 130px;
+  height: 130px;
+  transition: color 0.5s;
+  padding: 20px 0;
+  margin: 20px auto;
+  border: 2px solid #6195ff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+}
+
+.pricing-item-permonth .doller {
+  font-size: 50px;
+}
+
+.pricing-item-permonth .month {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.pricing-list {
+  list-style: none;
+}
+
+.pricing-list li {
+  color: #999;
+  line-height: 1.8;
+}
+
+.pricing-item-purchase {
+  background: none;
+  border: 0;
+  display: block;
+  width: 140px;
+  border: 2px solid #6195ff;
+  padding: 10px;  
+  margin: 15px auto 0 auto;
+  color: #6195ff;
+}
+
+.pricing-item:hover .pricing-item-permonth {
+  color: #fff;
+}
+
+.pricing-item:hover .pricing-item-text {
+  color: #6195ff;
+}
+/*END Price Section*/
+
 /*Team Section*/
 /*Blog Section*/
 /*Contact Section*/
