@@ -886,6 +886,9 @@ button {
   background: #fff;
 }
 
+.blog-item.mg {
+  margin: 0 5%;
+}
 .blog-item-img img{
   width: 100%;
 }
@@ -919,6 +922,9 @@ button {
   line-height: 1.5;
 }
 
+.blog-link {
+  color: #6195ff;
+}
 /* End Blog Section */
 
 /*Contact Section*/
